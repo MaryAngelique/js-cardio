@@ -50,7 +50,7 @@ function reverseString(str) {
   function isPalindrome(str) {
     const strRev = str.split("").reverse().join("");
 
-    return strRev === str;f
+    return strRev === str;
   }
   
   
@@ -59,7 +59,11 @@ function reverseString(str) {
   // Return an integer in reverse
   // ex. reverseInt(521) === 125
   
-  function reverseInt(int) {}
+  function reverseInt(int) {
+    const strRev = int.toString().split("").reverse().join("");
+
+    return parseInt(strRev);
+  }
   
   
   
@@ -84,7 +88,11 @@ function reverseString(str) {
   
   
   // Call Function
-  const output = reverseString('hello');
+//   const output = reverseString('hello');
+//   const output = isPalindrome('racecar');
+const output = reverseInt('125');
+
+
   
   console.log(output);
   
