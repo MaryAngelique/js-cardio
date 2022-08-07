@@ -70,7 +70,16 @@ function reverseString(str) {
   // CHALLENGE 4: CAPITALIZE LETTERS
   // Return a string with the first letter of every word capitalized
   // ex. capitalizeLetters('i love javascript') === 'I Love Javascript'
-  function capitalizeLetters(str) {}
+  function capitalizeLetters(str) {
+    //  For Loop
+    const strArr = str.toLowerCase().split(" ");
+
+    for (let i = 0; i < strArr.length; i++) {
+        strArr[i] = strArr[i].substring(0, 1).toUpperCase() + strArr[i].substring(1);
+    }
+
+    return strArr.join(" ");
+  }
   
   
   
@@ -90,7 +99,8 @@ function reverseString(str) {
   // Call Function
 //   const output = reverseString('hello');
 //   const output = isPalindrome('racecar');
-const output = reverseInt('125');
+//   const output = reverseInt('125');
+const output = capitalizeLetters('I Love JavaScript');
 
 
   
