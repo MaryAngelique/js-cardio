@@ -83,9 +83,18 @@ function reverseString(str) {
     // --------------------------------------------------------
 
     // Map
-    return str.toLowerCase().split(" ").map(function(word) {
-        return word[0].toUpperCase() + word.substr(1);
-    }).join(" ");
+    // return str.toLowerCase().split(" ").map(function(word) {
+    //     return word[0].toUpperCase() + word.substr(1);
+    // }).join(" ");
+
+    // --------------------------------------------------------
+
+    // Replace & Regex
+    return str.replace(/\b[a-z]/gi, function(char) {
+        return char.toUpperCase();
+    }); 
+    // g - global 
+    // i - case sensitive
   }
   
   
