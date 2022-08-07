@@ -5,15 +5,27 @@
 function reverseString(str) {
     // return str.split("").reverse().join("");
 
-    // For Loop
-    let revString = "";
-    for( let i = str.length - 1; i >= 0; i--) {
-        revString = str[i] + revString;
+    // --------------------------------------------------------
 
-        console.log(i);
+    // For Loop
+    // let revString = "";
+    // for( let i = str.length - 1; i >= 0; i--) {
+    //     revString = str[i] + revString;
+
+    //     console.log(i);
+    // }
+
+    // return revString
+
+    // --------------------------------------------------------
+
+    // For Of
+    let revString = "";
+    for( let char of str ) {
+        revString = char + revString;
     }
 
-    return revString
+    return revString;
   }
   
   
