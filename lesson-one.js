@@ -20,12 +20,20 @@ function reverseString(str) {
     // --------------------------------------------------------
 
     // For Of
-    let revString = "";
-    for( let char of str ) {
-        revString = char + revString;
-    }
+    // let revString = "";
+    // for( let char of str ) {
+    //     revString = char + revString;
+    // }
 
-    return revString;
+    // return revString;
+
+    // --------------------------------------------------------
+
+    // For Each
+    let strRev = "";
+    str.split("").forEach(char => {
+        strRev = char + strRev
+    });
   }
   
   
