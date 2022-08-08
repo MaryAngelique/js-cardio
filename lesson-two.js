@@ -26,6 +26,12 @@ function longestWord(sen) {
     console.log(longestWord);
 
     // SOLUTION 3 - Only return an array if multiple words, otherwise return a string
+    if (longestWord.length === 1) {
+        return longestWord[0];
+
+    } else {
+        return longestWord;
+    }
   }
   
   // CHALLENGE 2: ARRAY CHUNKING
