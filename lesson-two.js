@@ -13,9 +13,18 @@ function longestWord(sen) {
     // Arrow Function
     const sorted = word.sort((a, b) => b.length - a.length);
 
-    console.log(sorted)
-    
+    console.log(sorted);
+
     // SOLUTION 2 - Return an array and include multiple words if they have the same length
+    // const longestWord = sorted.filter(function(word) {
+    //    return word.length === sorted[0].length;  
+    // });
+
+    // Arrow Function
+    const longestWord = sorted.filter((word) => word.length === sorted[0].length);
+ 
+    console.log(longestWord);
+
     // SOLUTION 3 - Only return an array if multiple words, otherwise return a string
   }
   
