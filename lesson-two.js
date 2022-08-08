@@ -88,9 +88,16 @@ function longestWord(sen) {
     // return [].concat.apply([], arrays);
 
     // SOLUTION 3
-    return [].concat(...arrays);
-    
-    
+    // return [].concat(...arrays);
+
+    // SOLUTION 4
+    newArray = []
+    for( let i = 0 ; i < arrays.length; i++){
+        for(let j = 0 ; j < arrays[i].length; j++){
+            newArray.push(arrays[i][j])
+        }
+    }
+    return newArray
   }
   
   // CHALLENGE 4: ANAGRAM
