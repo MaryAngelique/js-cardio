@@ -41,21 +41,39 @@ function longestWord(sen) {
   
   function chunkArray(arr, len) {
     // // Init chunked Array
+    // const chunkedArr = [];
+
+    // // Set index
+    // let i = 0;
+
+    // // While loop -- loop while index is less than the array length
+    // while (i < arr.length) {
+    //     // Slice out from from the index to the index + chunk length and push on to the chunked array
+    //     chunkedArr.push(arr.slice(i, i + len));
+
+    //     // Increment by chunk length
+    //     i += len;
+    // }
+
+    // return chunkArray;
+
+    // Init chunked arr
     const chunkedArr = [];
 
-    // Set index
-    let i = 0;
+    // Loop through arr
+    arr.forEach(val => {
+        // Get last element
+        const last = chunkedArr[chunkedArr.length - 1];
 
-    // While loop -- loop while index is less than the array length
-    while (i < arr.length) {
-        // Slice out from from the index to the index + chunk length and push on to the chunked array
-        chunkedArr.push(arr.slice(i, i + len));
+        // Check if last and if last length is equal to the chunk len
+        if (!last || last.length === len) {
+            chunkedArr.push([val]);
+        } else {
+            last.push(val);
+        }
+    });
 
-        // Increment by chunk length
-        i += len;
-    }
-
-    return chunkArray;
+    return chunkedArr;
   }
   
   // CHALLENGE 3: FLATTEN ARRAY
@@ -79,7 +97,7 @@ function longestWord(sen) {
   function letterChanges(str) {}
   
   // Call Function
-  const output = longestWord('Hello, my name is Brad');
+  const output = chunkArray([1, 2, 3, 4, 5, 6, 7], 2);
   
   console.log(output);
   
