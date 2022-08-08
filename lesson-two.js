@@ -84,6 +84,9 @@ function longestWord(sen) {
     // SOLUTION 1
     return arrays.reduce((a, b) => a.concat(b));
     
+    // SOLUTION 2
+    return [].concat.apply([], arrays);
+    
   }
   
   // CHALLENGE 4: ANAGRAM
@@ -101,7 +104,9 @@ function longestWord(sen) {
   function letterChanges(str) {}
   
   // Call Function
-  const output = chunkArray([1, 2, 3, 4, 5, 6, 7], 2);
+//   const output = longestWord('Hi there, my name is Brad');
+//   const output = chunkArray([1, 2, 3, 4, 5, 6, 7], 2);
+  const output = flattenArray([[1, 2], [3, 4], [5, 6], [7]]);
   
   console.log(output);
   
