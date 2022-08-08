@@ -82,10 +82,14 @@ function longestWord(sen) {
   
   function flattenArray(arrays) {
     // SOLUTION 1
-    return arrays.reduce((a, b) => a.concat(b));
+    // return arrays.reduce((a, b) => a.concat(b));
     
     // SOLUTION 2
-    return [].concat.apply([], arrays);
+    // return [].concat.apply([], arrays);
+
+    // SOLUTION 3
+    return [].concat(...arrays);
+    
     
   }
   
