@@ -124,13 +124,27 @@ function longestWord(sen) {
   // Z should turn to A
   // ex. 'hello there' === 'Ifmmp UIfsf'
   
-  function letterChanges(str) {}
+  function letterChanges(str) {
+    let newStr = str.toLowerCase().replace(/[a-z]/gi, char => {
+        if (char === "z" || char === "Z") {
+            return "a";
+            
+        } else {
+            return String.fromCharCode(char.charCodeAt() + 1);
+        }
+    });
+
+    newStr = newStr.replace(/a|e|i|o|u/gi, vowel => vowel.toUpperCase());
+
+    return newStr;
+  }
   
   // Call Function
 //   const output = longestWord('Hi there, my name is Brad');
 //   const output = chunkArray([1, 2, 3, 4, 5, 6, 7], 2);
 //   const output = flattenArray([[1, 2], [3, 4], [5, 6], [7]]);
-const output = isAnagram("elbow", "below");
+//   const output = isAnagram("elbow", "below");
+const output = letterChanges("hello there");
   
   console.log(output);
   
