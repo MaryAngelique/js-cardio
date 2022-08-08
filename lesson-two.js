@@ -39,7 +39,24 @@ function longestWord(sen) {
   // ex. chunkArray([1, 2, 3, 4, 5, 6, 7], 3) === [[1, 2, 3],[4, 5, 6],[7]]
   // ex. chunkArray([1, 2, 3, 4, 5, 6, 7], 2) === [[1, 2],[3, 4],[5, 6],[7]]
   
-  function chunkArray(arr, len) {}
+  function chunkArray(arr, len) {
+    // // Init chunked Array
+    const chunkedArr = [];
+
+    // Set index
+    let i = 0;
+
+    // While loop -- loop while index is less than the array length
+    while (i < arr.length) {
+        // Slice out from from the index to the index + chunk length and push on to the chunked array
+        chunkedArr.push(arr.slice(i, i + len));
+
+        // Increment by chunk length
+        i += len;
+    }
+
+    return chunkArray;
+  }
   
   // CHALLENGE 3: FLATTEN ARRAY
   // Take an array of arrays and flatten to a single array
