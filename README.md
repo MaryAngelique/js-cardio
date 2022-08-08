@@ -8,3 +8,5 @@
 4. Capitalize Letters
 5. Find The Max Character
 6. FizzBuzz Challenge
+
+
