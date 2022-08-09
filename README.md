@@ -16,7 +16,7 @@
 3. Flatten Array
 4. Anagrams
 5. Letter Changes
-6. #### Methods I used
+#### Methods I used
 1. sort()
 2. filter()
 3. map()
