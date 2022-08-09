@@ -3,13 +3,24 @@
 // ex. addAll(2,5,6,7) === 20
 
 // Solution - ES5 arguments and for loop
-function addAll() {
-    var arguments = Array.prototype.slice.call(arguments);
-    var total = 0;
+// function addAll() {
+//     var arguments = Array.prototype.slice.call(arguments);
+//     var total = 0;
 
-    for (let i = 0; i < arguments.length; i++) {
-       total += arguments[i];
-    }
+//     for (let i = 0; i < arguments.length; i++) {
+//        total += arguments[i];
+//     }
+
+//     return total;
+// }
+
+// Solution 2 - ForEach
+function addAll(...numbers) {
+    let total = 0;
+
+    numbers.forEach((number) => {
+        total += number;
+    })
 
     return total;
 }
