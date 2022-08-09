@@ -127,7 +127,7 @@ function missingLetters(string) {
     string.split("").map((char, i) => {
         if (string.charCodeAt(i) == compare) {
             ++compare;
-            
+
         } else {
             missing = String.fromCharCode(compare);
         }
@@ -145,4 +145,13 @@ console.log(missingLetters("abcdefghjklmno"));
 // ex.
 // evenOddSums([50, 60, 60, 45, 71]) == [170, 116]
 
-function evenOddSums() {}
+function evenOddSums(array) {
+    let evenSum = 0;
+    let oddSum = 0;
+
+    array.forEach(number => (number % 2 === 0 ? (evenSum += number) : (oddSum += number)));
+
+    return [evenSum, oddSum];
+}
+
+console.log(evenOddSums([50, 60, 60, 45, 71]));
