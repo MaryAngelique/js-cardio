@@ -96,8 +96,21 @@ console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6));
 // a = [-1, 150, 190, 170, -1, -1, 160, 180]
 // sortByHeight(a) == [-1, 150, 160, 170, -1, -1, 180, 190]
 
-function sortByHeight() {}
+function sortByHeight() {
+    const array1 = [];
+    const array3 = [];
 
+    a.forEach((value, i) => (value === -1 ? array1.push(i) : array3.push(value)));
+
+    const sortArray = array3.sort((a, b) => a - b);
+
+    array1.forEach((value, i) => sortArray.splice(array1[i], 0, -1));
+
+    return sortArray;
+}
+
+const a = [-1, 150, 190, 170, -1, -1, 160, 180];
+console.log(sortByHeight(a) == [-1, 150, 160, 170, -1, -1, 180, 190]);
 // ---------------------------------------------------------------------------------------------------------
 
 // CHALLENGE 5: MISSING LETTERS
