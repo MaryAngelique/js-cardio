@@ -14,15 +14,23 @@
 //     return total;
 // }
 
-// Solution 2 - ForEach
+// Solution 2 - ES6 & ForEach
+// function addAll(...numbers) {
+//     let total = 0;
+
+//     numbers.forEach((number) => {
+//         total += number;
+//     })
+
+//     return total;
+// }
+
+// Solution 3 - ES6 & reduce
 function addAll(...numbers) {
-    let total = 0;
-
-    numbers.forEach((number) => {
-        total += number;
-    })
-
-    return total;
+    return numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+    // takes in accumulator and current value
+    // loops through the current value
+    // arrow function -- takee the accumulator (starts at 0) and for each iteration , add the current value
 }
 
 console.log(addAll(2, 5, 6, 8, 10, 29, 53));
