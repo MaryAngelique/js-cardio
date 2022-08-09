@@ -16,3 +16,5 @@
 3. Flatten Array
 4. Anagrams
 5. Letter Changes
+
+## Lesson 3 Challenges
