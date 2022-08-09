@@ -35,17 +35,43 @@ function addAll(...numbers) {
 
 console.log(addAll(2, 5, 6, 8, 10, 29, 53));
 
+// ---------------------------------------------------------------------------------------------------------
+
 // CHALLENGE 2: SUM ALL PRIMES
 // Pass in a number to loop up to and add all of the prime numbers. A prime number is a whole number greater than 1 whose only factors are 1 and itself
 // ex. sumAllPrimes(10) == 17
 
-function sumAllPrimes() {}
+function sumAllPrimes(number) {
+    let total = 0;
+
+    function checkForPrime(i) {
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    for (let i = 2; i <= number; i++) {
+        if (checkForPrime(i)) {
+            total += i;
+        }
+    }
+    return total;
+}
+
+console.log(sumAllPrimes(100));
+
+// ---------------------------------------------------------------------------------------------------------
 
 // CHALLENGE 3: SEEK & DESTROY
 // Remove from the array whatever is in the following arguments. Return the leftover numbers in an array
 // ex. seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6) == [3, 4, 'hello']
 
 function seekAndDestroy() {}
+
+// ---------------------------------------------------------------------------------------------------------
 
 // CHALLENGE 4: SORT BY HEIGHT
 // Some people are standing in a row in a park. There are trees between them which cannot be moved. Your task is to rearrange the people by their heights in a non-descending order without moving the trees.
@@ -55,6 +81,8 @@ function seekAndDestroy() {}
 
 function sortByHeight() {}
 
+// ---------------------------------------------------------------------------------------------------------
+
 // CHALLENGE 5: MISSING LETTERS
 // Find the missing letter in the passed letter range and return it. If all letters are present, return undefined
 // ex.
@@ -63,6 +91,8 @@ function sortByHeight() {}
 // missingLetters("abcdefghijklmnopqrstuvwxyz") == undefined
 
 function missingLetters() {}
+
+// ---------------------------------------------------------------------------------------------------------
 
 // CHALLENGE 6: EVEN & ODD SUMS
 // Take in an array and return an array of the sums of even and odd numbers
