@@ -18,3 +18,9 @@
 5. Letter Changes
 
 ## Lesson 3 Challenges
+1. Add All Numbers
+2. Sum All Primes
+3. Seek and Destroy
+4. Sort by Height
+5. Missing Letters
+6. Even and Odd Sums
