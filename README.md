@@ -24,3 +24,10 @@
 4. Sort by Height
 5. Missing Letters
 6. Even and Odd Sums
+#### Methods I used
+1. forEach()
+2. filter()
+3. map()
+4. sort()
+5. reduce()
+6. reduce()
