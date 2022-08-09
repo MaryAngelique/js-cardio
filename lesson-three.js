@@ -69,7 +69,24 @@ console.log(sumAllPrimes(100));
 // Remove from the array whatever is in the following arguments. Return the leftover numbers in an array
 // ex. seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6) == [3, 4, 'hello']
 
-function seekAndDestroy() {}
+// Solution 1 - Filter
+// function seekAndDestroy(arrays) {
+//     const argument = Array.from(arguments);
+    
+//     function filterArray(arrays) {
+//         // return true if not in an array
+//         return argument.indexOf(arrays) === -1;
+//     }
+
+//     return arrays.filter(filterArray);
+// }
+
+// Solution 2 - ...rest
+function seekAndDestroy(array, ...rest) {
+    return array.filter(value => !rest.includes(value));
+}
+
+console.log(seekAndDestroy([2, 3, 4, 6, 6, 'hello'], 2, 6));
 
 // ---------------------------------------------------------------------------------------------------------
 
