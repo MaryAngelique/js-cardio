@@ -8,6 +8,19 @@
 4. Capitalize Letters
 5. Find The Max Character
 6. FizzBuzz Challenge
+#### Methods I used
+1. for loop
+2. for of
+3. forEach()
+4. reduce()
+5. split()
+6. join()
+7. toString()
+8. parseInt()
+9. map()
+10. replace()
+11. Regex
+12. if/else statement
 
 ## Lesson 2 Challenges
 
