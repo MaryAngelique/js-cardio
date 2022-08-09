@@ -16,6 +16,23 @@
 3. Flatten Array
 4. Anagrams
 5. Letter Changes
+6. #### Methods I used
+1. sort()
+2. filter()
+3. map()
+4. sort()
+5. reduce()
+6. reduce()
+7. while loop
+8. if/else statement
+9. for loop
+10. concat()
+11. replace()
+12. split()
+13. join()
+14. fromCharCode
+15. toLowerCase()
+16. Regex
 
 ## Lesson 3 Challenges
 1. Add All Numbers
@@ -31,3 +48,8 @@
 4. sort()
 5. reduce()
 6. reduce()
+7. if/else statement
+8. for loop
+9. push()
+10. splice()
+11. fromCharCode()
