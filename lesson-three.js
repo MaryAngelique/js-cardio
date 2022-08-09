@@ -30,7 +30,7 @@ function addAll(...numbers) {
     return numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
     // takes in accumulator and current value
     // loops through the current value
-    // arrow function -- takee the accumulator (starts at 0) and for each iteration , add the current value
+    // arrow function -- take the accumulator (starts at 0) and for each iteration , add the current value
 }
 
 console.log(addAll(2, 5, 6, 8, 10, 29, 53));
