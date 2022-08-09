@@ -120,7 +120,23 @@ console.log(sortByHeight(a) == [-1, 150, 160, 170, -1, -1, 180, 190]);
 // missingLetters("abcdefghjklmno") == "i"
 // missingLetters("abcdefghijklmnopqrstuvwxyz") == undefined
 
-function missingLetters() {}
+function missingLetters(string) {
+    let compare = string.charCodeAt(0);
+    let missing;
+
+    string.split("").map((char, i) => {
+        if (string.charCodeAt(i) == compare) {
+            ++compare;
+            
+        } else {
+            missing = String.fromCharCode(compare);
+        }
+    });
+
+    return missing;
+}
+
+console.log(missingLetters("abcdefghjklmno"));
 
 // ---------------------------------------------------------------------------------------------------------
 
